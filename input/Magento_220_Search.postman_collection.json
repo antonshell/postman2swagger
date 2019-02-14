@@ -1,0 +1,567 @@
+{
+	"id": "ff09b9ad-a8de-4740-9be1-acebbc6483f2",
+	"name": "Magento 220 Search",
+	"description": "",
+	"auth": null,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "974da483-5624-48c3-b538-152b32c52438",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d9b97633-3450-4157-a9fe-3845d02c9060",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variables": [],
+	"order": [
+		"61916048-d26e-48c3-83ea-e012026a769d",
+		"c63aed11-e1a2-4c24-a84b-2204d1ee1b9f",
+		"a44150b5-e7a4-4ebc-9e66-4f712e0b9d8f",
+		"a07f367e-dcb1-415b-904e-2828cd0c458e",
+		"76138e99-e0db-4b8c-91c2-a0b2099e007a",
+		"372cb7f7-c8a9-4361-af5f-01943d1ed11a",
+		"567599d5-5a96-4824-9f31-f690e86e6384",
+		"bee20074-bf6f-4b77-b698-2ada3399a2d9",
+		"0755b551-d8cf-4bee-a59a-7d9c861309e0",
+		"8c0d14c0-99dd-4b66-a8a2-43a1e7d5bda5",
+		"5ff09e72-f17b-4b00-95ca-3692cc4dcf7e",
+		"3a4c3e31-c56d-4c26-b88e-e6ce016e85f1",
+		"041a0bb8-508a-4072-8c60-0ed99a7376a6",
+		"da65e45d-3309-4787-89d0-7be732c8ba5b",
+		"82adc351-762d-4058-bf01-5c883d043692",
+		"9f7daca6-7a71-4591-8c2a-9695427ca1fc",
+		"2882a005-5aa5-4436-9317-0280e11dba52",
+		"3a64fab3-8142-4a84-8821-8ae417a92093"
+	],
+	"folders_order": [
+		"1c06a584-110d-46d2-a533-743d14c2ab20"
+	],
+	"folders": [
+		{
+			"id": "1c06a584-110d-46d2-a533-743d14c2ab20",
+			"name": "RecommendationCrud",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "ff09b9ad-a8de-4740-9be1-acebbc6483f2",
+			"folder": null,
+			"order": [
+				"e196494b-bf42-4d7f-b346-63e195cb7222",
+				"553bbbf2-a719-4baa-a5f8-5405efca08b4"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "041a0bb8-508a-4072-8c60-0ed99a7376a6",
+			"name": "http://127.0.0.1:8098/filter3 Slider - MLN-1013",
+			"url": "http://api.milan.220v.ru/rest/V1/search-engine/filter",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\",\n  \"category\": \"3494\",\n  \"filters\": [\n  \t{\n  \t\t\"field\": \"a_78\",\n  \t\t\"type\": \"range\",\n  \t\t\"max\": 200,\n\t\t\"min\": 1.2\n  \t}\n  ]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0755b551-d8cf-4bee-a59a-7d9c861309e0",
+			"name": "http://127.0.0.1:8098/category/4105/products",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/category/4105/products",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2882a005-5aa5-4436-9317-0280e11dba52",
+			"name": "http://127.0.0.1:8098/recommendation/product/13821",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/recommendation/product/10675",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"cityCode\": \"5400000100000\",\n\t\"hash\": \"202cb962ac59075b964b07152d234b70\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "372cb7f7-c8a9-4361-af5f-01943d1ed11a",
+			"name": "http://127.0.0.1:8098/category/3459",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/category/3459",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3a4c3e31-c56d-4c26-b88e-e6ce016e85f1",
+			"name": "http://127.0.0.1:8098/filter2",
+			"url": "http://api.milan.220v.ru/rest/V1/search-engine/filter",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\",\n  \"category\": \"3385\",\n  \"filters\": [\n  \t{\n  \t\t\"field\": \"vendor\",\n  \t\t\"type\": \"multiselect\",\n  \t\t\"use_keyword\": true,\n  \t\t\"values\": [\n  \t\t\t\"MAKITA\",\n    \t\t\"HITACHI\"\n  \t\t]\n  \t},\n  \t{\n  \t\t\"field\": \"price\",\n  \t\t\"type\": \"range\",\n  \t\t\"max\": 16000,\n\t\t\"min\": 11000\n  \t}\n  ]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3a64fab3-8142-4a84-8821-8ae417a92093",
+			"name": "http://127.0.0.1:8098/main",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/main",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "553bbbf2-a719-4baa-a5f8-5405efca08b4",
+			"name": "Validate RuleSet",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/validate/rule-set",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1c06a584-110d-46d2-a533-743d14c2ab20",
+			"rawModeData": "{\n  \"query\": null,\n  \"set_id\": \"6082\",\n  \"public_name\": \"Дрели, шуруповерты\",\n  \"private_name\": \"Дрели, шуруповерты\",\n  \"type_id\": \"2\",\n  \"category_id\": \"3387\",\n  \"is_enabled\": \"1\",\n  \"filter_attribute\": \"a_14\",\n  \"filter_operator\": \"in\",\n  \"filter_value\": \"БЗП, ключевой\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "567599d5-5a96-4824-9f31-f690e86e6384",
+			"name": "http://127.0.0.1:8098/categories",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/categories",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5ff09e72-f17b-4b00-95ca-3692cc4dcf7e",
+			"name": "http://127.0.0.1:8098/filter",
+			"url": "http://api.milan.220v.ru/rest/V1/search-engine/filter",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"category\": \"80\",\n  \"vendors\": [\n      \"DREMEL\",\n    \"BOSCH\"\n  ],\n  \"max_price\": 800,\n  \"min_price\": 600,\n  \"sort\": {\n  \"field\": \"price\",\n  \"order\": \"asc\"\n   },\n  \"paging\": {\n    \"from\": 0,\n    \"size\": 10\n  },\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "61916048-d26e-48c3-83ea-e012026a769d",
+			"name": "http://127.0.0.1:8098/article/1",
+			"url": "http://api.milan.220v.ru/rest/V1/search-engine/article/1",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "76138e99-e0db-4b8c-91c2-a0b2099e007a",
+			"name": "http://127.0.0.1:8098/products + paging",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/products",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\",\n  \"from\": 5,\n  \"size\": 10\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "82adc351-762d-4058-bf01-5c883d043692",
+			"name": "http://127.0.0.1:8098/search + paging + sort",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/search",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"query\": \"Набор КЛЮЧЕЙ ARMERO AK10/094\",\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\",\n  \"category\": {\n    \"from\": 0,\n    \"size\": 2,\n    \n    \"sort\": {\n\t  \"field\": \"id\",\n\t  \"order\": \"desc\"\n    }\n  },\n  \"product\": {\n    \"from\": 0,\n    \"size\": 2,\n    \n    \"sort\": {\n\t  \"field\": \"price\",\n\t  \"order\": \"desc\"\n    },\n    \"category_id\": \"3617\"\n  }\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c0d14c0-99dd-4b66-a8a2-43a1e7d5bda5",
+			"name": "http://127.0.0.1:8098/category/4105/products + paging",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/category/4105/products",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"enabled": true,
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"cityCode\": \"5400000100000\",\n  \"from\": 0,\n  \"size\": 10\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9f7daca6-7a71-4591-8c2a-9695427ca1fc",
+			"name": "http://127.0.0.1:8098/suggest",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/suggest",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"query\": \"круг\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a07f367e-dcb1-415b-904e-2828cd0c458e",
+			"name": "http://127.0.0.1:8098/products",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/products",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"cityCode\": \"5400000100000\",\n\t\"hash\": \"202cb962ac59075b964b07152d234b70\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a44150b5-e7a4-4ebc-9e66-4f712e0b9d8f",
+			"name": "http://127.0.0.1:8098/product/10675",
+			"url": "http://api.milan.220v.ru/rest/V1/search-engine/product/10675",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bee20074-bf6f-4b77-b698-2ada3399a2d9",
+			"name": "http://127.0.0.1:8098/categories + paging",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/categories",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"from\": 5,\n  \"size\": 10\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c63aed11-e1a2-4c24-a84b-2204d1ee1b9f",
+			"name": "http://127.0.0.1:8098/articles",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/articles",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "da65e45d-3309-4787-89d0-7be732c8ba5b",
+			"name": "http://127.0.0.1:8098/search",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/search",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"query\": \"круг\",\n  \"cityCode\": \"5400000100000\",\n  \"hash\": \"202cb962ac59075b964b07152d234b70\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e196494b-bf42-4d7f-b346-63e195cb7222",
+			"name": "Validate Rule",
+			"url": "http://127.0.0.1:8096/rest/V1/search-engine/validate/rule",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "1c06a584-110d-46d2-a533-743d14c2ab20",
+			"rawModeData": "{\"rule_id\":\"12125\",\"set_id\":\"6082\",\"field\":\"category_ids\",\"operator\":\"=\",\"value\":\"3527\",\"created_at\":\"2018-09-21 11:24:03\",\"is_enabled\":\"1\",\"is_main\":\"0\"}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
